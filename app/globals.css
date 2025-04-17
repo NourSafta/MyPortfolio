@@ -1,26 +1,170 @@
 @import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+* {
+  font-family: Outfit;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+html,
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100%;
+  color-scheme: light dark;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Light mode base */
+body {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* 🌙 DARK MODE OVERRIDES */
+html.dark body {
+  background-color: #11001f;
+  color: #ffffff;
+}
+
+/* ✅ Contact Section in Dark */
+html.dark #contact {
+  background-image: none !important;
+  background-color: #1b1d33 !important;
+}
+
+/* ✅ Navbar Scroll Fix */
+html.dark nav.bg-white {
+  background-color: #1f2937 !important; /* gray-800 */
+}
+
+/* ✅ Resume Button Text */
+html.dark .resume-btn {
+  background-color: #1f2937 !important; /* gray-800 */
+  color: #ffffff !important;
+  border-color: #999 !important;
+}
+
+/* ✅ Invert icons that are black PNGs or SVGs */
+html.dark img.icon-dark {
+  filter: invert(1);
+}
+
+/* ✅ Fix footer link text color */
+html.dark .footer a {
+  color: #ffffff;
+}
+html.dark .footer a:hover {
+  color: #38bdf8; /* Tailwind sky-400 or tweak as needed */
+}
+
+/* ✅ Optional: tooltip fix */
+html.dark .tooltip {
+  background-color: #222;
+  color: #fff;
+}
+
+/* ✅ DARK MODE FOOTER FIX (text always white) */
+html.dark .footer {
+  color: #ffffff;
+}
+
+html.dark .footer p,
+html.dark .footer span,
+html.dark .footer a {
+  color: #ffffff;
+}
+
+/* ✅ PRESERVE original hover brand colors in dark mode */
+html.dark .footer a[href*="github"] {
+  color: #ffffff;
+}
+html.dark .footer a[href*="github"]:hover {
+  color: #000000; /* or your preferred black hover */
+}
+
+html.dark .footer a[href*="linkedin"]:hover {
+  color: #0a66c2; /* LinkedIn blue */
+}
+
+html.dark .footer a[href*="instagram"]:hover {
+  color: #e1306c; /* Instagram pink */
+}
+
+html.dark .footer a[href*="whatsapp"]:hover {
+  color: #068034; /* WhatsApp green */
+}
+
+/* ✅ Do NOT invert icons in footer */
+html.dark .footer img {
+  filter: none !important;
+}
+
+html.dark .about-card {
+  background-color: #1f1f2e; /* optional background color */
+  color: #ffffff;
+}
+
+html.dark .about-card p,
+html.dark .about-card h3,
+html.dark .about-card span,
+html.dark .about-card div {
+  color: #ffffff;
+}
+
+html.dark .about-card img {
+  filter: brightness(0) invert(1);
+}
+
+/* ✅ Soft Skills Text Improvements */
+html.dark .soft-skills-section p {
+  color: #e0e0e0; /* Softer than white, higher contrast */
+}
+
+html.dark .soft-skills-section p.italic {
+  color: #b0b0b0; /* Subtle, readable italics */
+  font-style: italic;
+}
+
+/* ✅ Tool Categories Text Fix */
+html.dark .tool-section h5 {
+  color: #f0f0f0; /* Almost white for visibility */
+}
+
+html.dark .tools-title {
+  color: #ffffff;
+}
+/* 🌙 Work Section Fixes */
+html.dark #work p,
+html.dark #work h2,
+html.dark #work h4,
+html.dark #work .text-gray-700,
+html.dark #work .text-gray-800 {
+  color: #ffffff !important;
+}
+
+/* For subtle paragraphs like the subtitle */
+html.dark #work .subtitle {
+  color: #cccccc !important;
+}
+
+/* Optional: button text hover fix */
+html.dark #work button:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+/* Fix project card title/description on light overlay in dark mode */
+html.dark #work .group h2,
+html.dark #work .group p {
+  color: #1a1a1a !important; /* dark text for white card */
+}
+/* 🌓 Contact Section Text Contrast Fix */
+html.dark #contact h2,
+html.dark #contact h4,
+html.dark #contact p,
+html.dark #contact label {
+  color: #e5e7eb; /* Tailwind gray-200 */
+}
+
+/* Optional: button text clarity override (if needed) */
+html.dark #contact button {
+  color: #ffffff;
 }
