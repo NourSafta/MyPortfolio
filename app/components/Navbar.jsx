@@ -1,6 +1,7 @@
 import React, { useRef, useState, useEffect } from "react";
 import Image from "next/image";
 import { assets } from "../../assets/assets";
+import FavoritesModal from "./FavoritesModal";
 
 const sections = ["top", "about", "services", "work", "contact"];
 
@@ -10,6 +11,7 @@ const Navbar = ({ onChatClick }) => {
   const [scrollProgress, setScrollProgress] = useState(0);
   const [darkMode, setDarkMode] = useState(false);
   const sideMenuRef = useRef();
+  const [isFavesOpen, setIsFavesOpen] = useState(false);
 
   useEffect(() => {
     const savedMode = localStorage.getItem("theme");
@@ -138,9 +140,9 @@ const Navbar = ({ onChatClick }) => {
             </li>
           ))}
           <li>
-            <a
+            <button
+              onClick={() => setIsFavesOpen(true)}
               className="font-Ovo transition-all flex items-center gap-2 hover:text-[#014421] hover:font-bold group"
-              href="#favorites"
             >
               <Image
                 src={assets.heart}
@@ -149,10 +151,10 @@ const Navbar = ({ onChatClick }) => {
                 height={20}
                 className="transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6"
               />
-              <span className="group-hover:tracking-wide transition-all duration-300">
+              <span className="group-hover:tracking-wide transition-all duration-300 cursor-pointer">
                 Faves
               </span>
-            </a>
+            </button>
           </li>
         </ul>
 
@@ -238,17 +240,28 @@ const Navbar = ({ onChatClick }) => {
             </li>
           ))}
           <li>
-            <a
-              className="font-Ovo hover:text-green-500 transition-colors flex items-center gap-2"
-              onClick={closeMenu}
-              href="#favorites"
+            <button
+              onClick={() => setIsFavesOpen(true)}
+              className="font-Ovo transition-all flex items-center gap-2 hover:text-[#014421] hover:font-bold group"
             >
-              <Image src={assets.heart} alt="Faves" width={20} height={20} />
-              Faves
-            </a>
+              <Image
+                src={assets.heart}
+                alt="Faves"
+                width={20}
+                height={20}
+                className="transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6"
+              />
+              <span className="group-hover:tracking-wide transition-all duration-300 cursor-pointer">
+                Faves
+              </span>
+            </button>
           </li>
         </ul>
       </nav>
+      <FavoritesModal
+        open={isFavesOpen}
+        onClose={() => setIsFavesOpen(false)}
+      />
     </>
   );
 };
