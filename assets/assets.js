@@ -1,75 +1,148 @@
+import user_image from "./user-image.jpg";
+import code_icon from "./code-icon.png";
+import code_icon_dark from "./code-icon-dark.png";
+import edu_icon from "./edu-icon.png";
+import edu_icon_dark from "./edu-icon-dark.png";
+import project_icon from "./project-icon.png";
+import project_icon_dark from "./project-icon-dark.png";
+import vscode from "./vscode.png";
+import firebase from "./firebase.png";
+import react from "./react.png";
+import figma from "./figma.png";
+import git from "./git.png";
+import next from "./next.png";
+import mongodb from "./mongodb.png";
+import right_arrow_white from "./right-arrow-white.png";
+import logo from "./logo.png";
+import logo_dark from "./logo_dark.png";
+import mail_icon from "./mail_icon.png";
+import mail_icon_dark from "./mail_icon_dark.png";
+import profile_img from "./profile-img.jpg";
+import download_icon from "./download-icon.png";
+import hand_icon from "./hand-icon.png";
+import header_bg_color from "./header-bg-color.png";
+import moon_icon from "./moon_icon.png";
+import sun_icon from "./sun_icon.png";
+import arrow_icon from "./arrow-icon.png";
+import arrow_icon_dark from "./arrow-icon-dark.png";
+import menu_black from "./menu-black.png";
+import menu_white from "./menu-white.png";
+import close_black from "./close-black.png";
+import close_white from "./close-white.png";
+import web_icon from "./web-icon.png";
+import mobile_icon from "./mobile-icon.png";
+import ui_icon from "./ui-icon.png";
+import right_arrow from "./right-arrow.png";
+import send_icon from "./send-icon.png";
+import right_arrow_bold from "./right-arrow-bold.png";
+import right_arrow_bold_dark from "./right-arrow-bold-dark.png";
+import home from "./home.png";
+import about from "./about.png";
+import service from "./service.png";
+import email from "./email.png";
+import ai from "./ai.png";
+import background from "./background.png";
+import briefcase from "./briefcase.png";
+import avatar from "./avatar.png";
+import chart from "./chart.png";
+import heart from "./heart.png";
+import linkedin from "./linkedin.png";
+import github from "./github.png";
+import instagram from "./instagram.png";
+import whatsapp from "./whatsapp.png";
+import web from "./web.png";
+import xd from "./xd.png";
+import google from "./google-cloud.png";
+import aws from "./aws.png";
+import azure from "./azure.png";
+import jest from "./Jest.png";
+import junit from "./junit.png";
+import tensorflow from "./tensorflow.png";
+import pytorch from "./pytorch.png";
+import jupyter from "./jupyter.png";
+import wireshark from "./wireshark.png";
+import burpsuite from "./burpsuite.png";
+import kali from "./kali.png";
+import nmap from "./nmap.png";
+import selenium from "./selenium.png";
+import nodejs from "./nodejs.png";
+import shield from "./shield.png";
+import brain from "./brain.png";
+import chart_icon from "./chart-icon.png";
+
 export const assets = {
-  user_image: "/MyPortfolio/user-image.jpg",
-  code_icon: "/MyPortfolio/code-icon.png",
-  code_icon_dark: "/MyPortfolio/code-icon-dark.png",
-  edu_icon: "/MyPortfolio/edu-icon.png",
-  edu_icon_dark: "/MyPortfolio/edu-icon-dark.png",
-  project_icon: "/MyPortfolio/project-icon.png",
-  project_icon_dark: "/MyPortfolio/project-icon-dark.png",
-  vscode: "/MyPortfolio/vscode.png",
-  firebase: "/MyPortfolio/firebase.png",
-  react: "/MyPortfolio/react.png",
-  figma: "/MyPortfolio/figma.png",
-  git: "/MyPortfolio/git.png",
-  next: "/MyPortfolio/next.png",
-  mongodb: "/MyPortfolio/mongodb.png",
-  right_arrow_white: "/MyPortfolio/right-arrow-white.png",
-  logo: "/MyPortfolio/logo.png",
-  logo_dark: "/MyPortfolio/logo_dark.png",
-  mail_icon: "/MyPortfolio/mail_icon.png",
-  mail_icon_dark: "/MyPortfolio/mail_icon_dark.png",
-  profile_img: "/MyPortfolio/profile-img.jpg",
-  download_icon: "/MyPortfolio/download-icon.png",
-  hand_icon: "/MyPortfolio/hand-icon.png",
-  header_bg_color: "/MyPortfolio/header-bg-color.png",
-  moon_icon: "/MyPortfolio/moon_icon.png",
-  sun_icon: "/MyPortfolio/sun_icon.png",
-  arrow_icon: "/MyPortfolio/arrow-icon.png",
-  arrow_icon_dark: "/MyPortfolio/arrow-icon-dark.png",
-  menu_black: "/MyPortfolio/menu-black.png",
-  menu_white: "/MyPortfolio/menu-white.png",
-  close_black: "/MyPortfolio/close-black.png",
-  close_white: "/MyPortfolio/close-white.png",
-  web_icon: "/MyPortfolio/web-icon.png",
-  mobile_icon: "/MyPortfolio/mobile-icon.png",
-  ui_icon: "/MyPortfolio/ui-icon.png",
-  right_arrow: "/MyPortfolio/right-arrow.png",
-  send_icon: "/MyPortfolio/send-icon.png",
-  right_arrow_bold: "/MyPortfolio/right-arrow-bold.png",
-  right_arrow_bold_dark: "/MyPortfolio/right-arrow-bold-dark.png",
-  home: "/MyPortfolio/home.png",
-  about: "/MyPortfolio/about.png",
-  service: "/MyPortfolio/service.png",
-  email: "/MyPortfolio/email.png",
-  ai: "/MyPortfolio/ai.png",
-  background: "/MyPortfolio/background.png",
-  briefcase: "/MyPortfolio/briefcase.png",
-  avatar: "/MyPortfolio/avatar.png",
-  chart: "/MyPortfolio/chart.png",
-  heart: "/MyPortfolio/heart.png",
-  linkedin: "/MyPortfolio/linkedin.png",
-  github: "/MyPortfolio/github.png",
-  instagram: "/MyPortfolio/instagram.png",
-  whatsapp: "/MyPortfolio/whatsapp.png",
-  web: "/MyPortfolio/web.png",
-  xd: "/MyPortfolio/xd.png",
-  google: "/MyPortfolio/google-cloud.png",
-  aws: "/MyPortfolio/aws.png",
-  azure: "/MyPortfolio/azure.png",
-  jest: "/MyPortfolio/Jest.png",
-  junit: "/MyPortfolio/junit.png",
-  tensorflow: "/MyPortfolio/tensorflow.png",
-  pytorch: "/MyPortfolio/pytorch.png",
-  jupyter: "/MyPortfolio/jupyter.png",
-  wireshark: "/MyPortfolio/wireshark.png",
-  burpsuite: "/MyPortfolio/burpsuite.png",
-  kali: "/MyPortfolio/kali.png",
-  nmap: "/MyPortfolio/nmap.png",
-  selenium: "/MyPortfolio/selenium.png",
-  nodejs: "/MyPortfolio/nodejs.png",
-  shield: "/MyPortfolio/shield.png",
-  brain: "/MyPortfolio/brain.png",
-  chart_icon: "/MyPortfolio/chart-icon.png",
+  user_image,
+  code_icon,
+  code_icon_dark,
+  edu_icon,
+  edu_icon_dark,
+  project_icon,
+  project_icon_dark,
+  vscode,
+  react,
+  next,
+  firebase,
+  figma,
+  git,
+  mongodb,
+  right_arrow_white,
+  logo,
+  logo_dark,
+  mail_icon,
+  mail_icon_dark,
+  profile_img,
+  download_icon,
+  hand_icon,
+  header_bg_color,
+  moon_icon,
+  sun_icon,
+  arrow_icon,
+  arrow_icon_dark,
+  menu_black,
+  menu_white,
+  close_black,
+  close_white,
+  web_icon,
+  mobile_icon,
+  ui_icon,
+  right_arrow,
+  send_icon,
+  right_arrow_bold,
+  right_arrow_bold_dark,
+  home,
+  about,
+  service,
+  email,
+  ai,
+  background,
+  briefcase,
+  avatar,
+  chart,
+  heart,
+  linkedin,
+  github,
+  instagram,
+  whatsapp,
+  web,
+  xd,
+  google,
+  aws,
+  azure,
+  jest,
+  junit,
+  tensorflow,
+  pytorch,
+  jupyter,
+  wireshark,
+  burpsuite,
+  kali,
+  nmap,
+  selenium,
+  nodejs,
+  shield,
+  brain,
+  chart_icon,
+  logo_dark,
 };
 
 export const workData = [
