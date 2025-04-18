@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Nour Safta • Portfolio
 
-## Getting Started
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
 
-First, run the development server:
+> A polished, responsive personal portfolio built with Next.js 15 and Tailwind CSS, deployed on Vercel.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Live Demo
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+➡️ my-portfolio-nour-safta.vercel.app
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 💡 About
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This repository powers my online portfolio where I showcase:
 
-## Learn More
+- 🔒 My background in cybersecurity, AI & web development  
+- 🎨 Attention to design and detail  
+- 🛠️ Key projects like DarkShare, MentaloLife, etc.  
+- ❤️ Personal favorites 
 
-To learn more about Next.js, take a look at the following resources:
+## 🛠 Tech Stack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Framework:** Next.js 15 (App Router, static export)  
+- **Styling:** Tailwind CSS v4 (JIT, dark mode)  
+- **Hosting:** Vercel (automatic deployments from GitHub)  
+- **Assets:** next/image for optimized images  
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📦 Installation & Local Dev
 
-## Deploy on Vercel
+1. **Clone the repo**  
+   ```bash
+   git clone https://github.com/NourSafta/MyPortfolio.git
+   cd portfolio
+   
+2. **Install dependencies**
+   ```bash
+    npm install
+    # or
+    yarn
+    # or
+    pnpm install
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+3. **Run locally**
+   ```bash
+    npm run dev
+    # or
+    yarn dev
+  Open http://localhost:3000 to view.
